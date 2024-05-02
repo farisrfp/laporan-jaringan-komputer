@@ -29,25 +29,25 @@ jobs:
         with:
           path: dist
 
-  # deploy:
-  #   name: Deploy
-  #   if: github.event_name != 'pull_request'
-  #   needs: compile
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     contents: read
-  #     pages: write
-  #     id-token: write
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   concurrency:
-  #     group: pages
-  #     cancel-in-progress: false
-  #   steps:
-  #     - name: Configure Pages
-  #       uses: actions/configure-pages@v3.0.6
+  deploy:
+    name: Deploy
+    if: github.event_name != 'pull_request'
+    needs: compile
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v3.0.6
 
-  #     - name: Deploy to Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v2.0.4
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v2.0.4
