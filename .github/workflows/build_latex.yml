@@ -22,7 +22,8 @@ jobs:
           working_directory: 'Modul 1'
           root_file: 'main.tex'
       - name: Move modul 1 to dist
-        run: mv "Modul 1/main.pdf" dist/modul-1.pdf
+        working-directory: 'Modul 1'
+        run: mv main.pdf ../dist/modul_1.pdf
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2.0.0
