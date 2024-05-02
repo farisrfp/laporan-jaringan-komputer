@@ -18,7 +18,7 @@ Laporan Praktikum Jaringan Komputer ini dibuat untuk memenuhi kompetensi mata ku
 
 Laporan Praktikum Jaringan Komputer ini dibuat menggunakan LaTeX. PDF laporan praktikum dapat diakses dibawah.
 
-- [__MODUL 1: Wireless__](https://github.com/farisrfp/laporan-jaringan-komputer/modul-1.pdf)
+- [__MODUL 1: Wireless__](farisrfp.github.io/laporan-jaringan-komputer/modul_1.pdf)
 - [__MODUL 2__](https://dr5hn.github.io/coming-soon/)
 - [__MODUL 3__](https://dr5hn.github.io/coming-soon/)
 - [__MODUL 4__](https://dr5hn.github.io/coming-soon/)
