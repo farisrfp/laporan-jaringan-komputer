@@ -19,7 +19,7 @@ jobs:
       - name: Compile modul 1
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: Modul 1/main.tex
+          root_file: 'Modul 1/main.tex'
       - name: Move modul 1 to dist
         run: mv "Modul 1/main.pdf" dist/modul_1.pdf
 
