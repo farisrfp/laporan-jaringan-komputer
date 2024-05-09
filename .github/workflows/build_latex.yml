@@ -23,7 +23,16 @@ jobs:
           root_file: 'main.tex'
       - name: Move modul 1 to dist
         working-directory: 'Modul 1'
-        run: mv main.pdf ../dist/modul_1.pdf
+        run: mv main.pdf ../dist/modul-1.pdf
+
+      - name: Compile modul 2
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: 'Modul 2'
+          root_file: 'main.tex'
+      - name: Move modul 2 to dist
+        working-directory: 'Modul 2'
+        run: mv main.pdf ../dist/modul-2.pdf
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2.0.0

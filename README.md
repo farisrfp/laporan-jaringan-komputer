@@ -1,12 +1,17 @@
 # Laporan Praktikum Jaringan Komputer
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/farisrfp/laporan-jaringan-komputer/build_latex.yml?colorA=363a4f&colorB=a6da95&style=for-the-badge)
+![GitHub License](https://img.shields.io/github/license/farisrfp/laporan-jaringan-komputer?colorA=363a4f&colorB=b7bdf8&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/farisrfp/laporan-jaringan-komputer?colorA=363a4f&colorB=f5a97f&style=for-the-badge)
+
+
 <img src="https://www.its.ac.id/komputer/wp-content/uploads/sites/28/2018/03/image10.png" alt="Teknik Komputer ITS" width="150" height="150">
 
 ## Deskripsi
 
 Laporan Praktikum Jaringan Komputer ini dibuat untuk memenuhi kompetensi mata kuliah wajib Program Studi Teknik Komputer ITS. 
 
-> PDF Modul Praktikum Jaringan Komputer dapat diakses [disini](https://github.com/Lab-B300-MIOT/modul-praktikum-jarkom)
+> Modul Praktikum Jaringan Komputer dapat diakses [disini](https://github.com/Lab-B300-MIOT/modul-praktikum-jarkom)
 
 ## Anggota Kelompok
 
@@ -18,12 +23,12 @@ Laporan Praktikum Jaringan Komputer ini dibuat untuk memenuhi kompetensi mata ku
 
 Laporan Praktikum Jaringan Komputer ini dibuat menggunakan LaTeX. PDF laporan praktikum dapat diakses dibawah.
 
-- [__MODUL 1: Wireless__](https://farisrfp.github.io/laporan-jaringan-komputer/modul_1.pdf)
-- [__MODUL 2__](https://dr5hn.github.io/coming-soon/)
-- [__MODUL 3__](https://dr5hn.github.io/coming-soon/)
-- [__MODUL 4__](https://dr5hn.github.io/coming-soon/)
-- [__MODUL 5__](https://dr5hn.github.io/coming-soon/)
+- [__MODUL 1: Wireless__](https://farisrfp.github.io/laporan-jaringan-komputer/modul-1.pdf)
+- [__MODUL 2: Routing Statis dan Dinamis__](https://farisrfp.github.io/laporan-jaringan-komputer/modul-2.pdf)
+- [__MODUL 3: Manajemen Bandwith__](https://dr5hn.github.io/coming-soon/)
+- [__MODUL 4: VPN__](https://dr5hn.github.io/coming-soon/)
+- [__MODUL 5: IPv6__](https://dr5hn.github.io/coming-soon/)
 
 ## Lisensi
 
-Template Laporan Praktikum Workshop Telematika ini dilisensikan di bawah [lisensi MIT](LICENSE).
+Laporan Praktikum Jaringan Komputer ini dilisensikan di bawah [lisensi MIT](LICENSE).
