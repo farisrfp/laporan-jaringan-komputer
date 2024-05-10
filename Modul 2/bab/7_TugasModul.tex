@@ -1,6 +1,58 @@
 \section*{Tugas Modul} % Jika ada Tugas Modul
 \begin{enumerate}
     \item Buatlah topologi jaringan percobaan 1 dan 2.
+    
+    Topologi jaringan percobaan 1 dan 2 dapat dilihat pada bagian \textbf{Topologi}.
+
     \item Perbedaan Static Routing dan Dynamic Routing.
+    
+    \textbf{Static Routing}
+    Static Routing mengacu pada metode konfigurasi tabel routing secara manual oleh administrator jaringan. Metode ini memiliki beberapa karakteristik sebagai berikut:
+    \begin{itemize}
+        \item Routing statis tidak memerlukan proses pencarian rute atau pembaruan tabel routing secara otomatis. Administrator secara manual menetapkan rute-rute dalam tabel routing.
+        \item Rute yang ditentukan secara manual tidak berubah kecuali diubah oleh administrator. Ini menjadikannya cocok untuk jaringan kecil dengan topologi sederhana dan rute yang stabil.
+    \end{itemize}
+
+    \textbf{Dynamic Routing}
+    Dynamic Routing menggunakan protokol routing untuk secara otomatis memperbarui tabel routing berdasarkan informasi yang diterima dari router lain atau perangkat jaringan lainnya. Berikut adalah karakteristik dari dynamic routing:
+    \begin{itemize}
+        \item Perangkat jaringan menggunakan protokol seperti OSPF (Open Shortest Path First), RIP (Routing Information Protocol), atau EIGRP (Enhanced Interior Gateway Routing Protocol) untuk berkomunikasi dan bertukar informasi tentang jaringan yang terhubung, kondisi jaringan, dan rute yang tersedia.
+        \item Proses ini memungkinkan perangkat jaringan untuk secara dinamis memilih rute terbaik ke tujuan yang ditentukan, menjadikannya lebih fleksibel dan adaptif terhadap perubahan topologi atau ketersediaan rute baru.
+        \item Dynamic Routing lebih cocok digunakan dalam jaringan besar dengan topologi yang kompleks dan rute yang berubah secara dinamis.
+    \end{itemize}
+
     \item Keuntungan dan kekurangan Static Routing dan Dynamic Routing.
+    
+    \textbf{Keuntungan dan Kekurangan Static Routing}
+
+    \textbf{Keuntungan:}
+    \begin{itemize}
+        \item Lebih mudah dikelola dalam jaringan kecil atau jaringan dengan topologi yang sederhana.
+        \item Tidak membutuhkan banyak sumber daya perangkat keras dan perangkat lunak.
+        \item Tidak ada risiko looping karena rute tidak berubah secara otomatis.
+    \end{itemize}
+    
+    \textbf{Kekurangan:}
+    \begin{itemize}
+        \item Tidak fleksibel, memerlukan intervensi manual untuk perubahan rute.
+        \item Tidak cocok untuk jaringan besar atau jaringan dengan topologi yang kompleks.
+        \item Kurang adaptif terhadap kegagalan rute atau perubahan jaringan secara dinamis.
+    \end{itemize}
+    
+    \textbf{Keuntungan dan Kekurangan Dynamic Routing}
+    
+    \textbf{Keuntungan:}
+    \begin{itemize}
+        \item Fleksibel dan dapat beradaptasi dengan perubahan topologi atau kegagalan rute secara otomatis.
+        \item Cocok untuk jaringan besar atau kompleks.
+        \item Meningkatkan efisiensi karena dapat memilih rute terbaik berdasarkan informasi terbaru.
+    \end{itemize}
+    
+    \textbf{Kekurangan:}
+    \begin{itemize}
+        \item Lebih kompleks untuk dikonfigurasi dan dipelihara.
+        \item Mengkonsumsi lebih banyak sumber daya perangkat keras dan perangkat lunak.
+        \item Ada risiko looping atau konflik rute jika tidak dikonfigurasi dengan benar.
+    \end{itemize}
+
 \end{enumerate}

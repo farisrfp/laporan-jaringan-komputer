@@ -1,3 +1,69 @@
 % Bagian Tahapan Percobaan
 \section*{Tahapan Percobaan} % Jika ada tahapan percobaan
 
+Berikut adalah langkah-langkah yang dilakukan untuk menghubungkan PC ke router menggunakan Winbox dan mengatur beberapa konfigurasi pada router.
+
+\subsection*{Langkah 1: Hubungkan PC ke Router}
+\begin{enumerate}
+    \item \textbf{Hubungkan Kabel LAN}:
+    Sambungkan kabel LAN dari port Ethernet PC ke port Ethernet pada router.
+\end{enumerate}
+
+\subsection*{Langkah 2: Buka Aplikasi Winbox}
+\begin{enumerate}
+    \item \textbf{Buka Winbox}:
+    Buka aplikasi Winbox di PC Anda.
+\end{enumerate}
+
+\subsection*{Langkah 3: Hubungkan Winbox ke Router}
+\begin{enumerate}
+    \item \textbf{Pilih Router dari Neighbor List}:
+    \begin{itemize}
+        \item Di Winbox, pilih tab 'Neighbors'.
+        \item Klik 'Refresh' untuk memuat daftar router yang terhubung.
+        \item Pilih router yang ingin dihubungkan dari daftar yang muncul.
+    \end{itemize}
+    
+    \item \textbf{Hubungkan ke Router}:
+    Setelah memilih router, klik 'Connect' untuk terhubung ke router.
+\end{enumerate}
+
+\subsection*{Langkah 4: Atur Alamat IP pada Router}
+\begin{enumerate}
+    \item \textbf{Buka Pengaturan IP Address}:
+    \begin{itemize}
+        \item Klik menu 'IP'.
+        \item Pilih 'Addresses' dari daftar menu.
+    \end{itemize}
+    
+    \item \textbf{Tambah Alamat IP Baru}:
+    \begin{itemize}
+        \item Pada jendela 'Addresses', klik tanda tambah (+).
+        \item Isi 'Address' dengan alamat IP yang ingin digunakan.
+        \item Isi 'Network' dengan jaringan yang sesuai.
+        \item Pilih 'Interface' yang akan digunakan (misalnya, 'ether1' untuk port Ethernet pertama).
+        \item Klik 'Apply', lalu 'OK'.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Langkah 5: Mengaktifkan WLAN pada Router}
+\begin{enumerate}
+    \item \textbf{Aktifkan Wireless Interface}:
+    \begin{itemize}
+        \item Klik menu 'Wireless'.
+        \item Pada tab 'Interfaces', pilih 'wlan1' atau interface WLAN yang tersedia.
+        \item Klik kotak centang di samping interface untuk mengaktifkannya.
+        \item Klik 'Apply', lalu 'OK'.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Langkah 6: Atur WLAN Mode dan SSID}
+\begin{enumerate}
+    \item \textbf{Atur Mode Wireless}:
+    \begin{itemize}
+        \item Tetap di tab 'Wireless', pilih 'wlan1' (atau interface WLAN lainnya).
+        \item Di bagian 'Wireless', pilih mode yang diinginkan. Untuk Point to Point, pilih 'bridge', dan untuk Point to Multi Point, pilih 'ap bridge'.
+        \item Ubah 'SSID' sesuai keinginan Anda.
+        \item Klik 'Apply', lalu 'OK'.
+    \end{itemize}
+\end{enumerate}
