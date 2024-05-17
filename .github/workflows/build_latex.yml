@@ -34,6 +34,15 @@ jobs:
         working-directory: 'Modul 2'
         run: mv main.pdf ../dist/modul-2.pdf
 
+      - name: Compile modul 3
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: 'Modul 3'
+          root_file: 'main.tex'
+      - name: Move modul 3 to dist
+        working-directory: 'Modul 3'
+        run: mv main.pdf ../dist/modul-3.pdf
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2.0.0
         with:

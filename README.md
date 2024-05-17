@@ -25,7 +25,7 @@ Laporan Praktikum Jaringan Komputer ini dibuat menggunakan LaTeX. PDF laporan pr
 
 - [__MODUL 1: Wireless__](https://farisrfp.github.io/laporan-jaringan-komputer/modul-1.pdf)
 - [__MODUL 2: Routing Statis dan Dinamis__](https://farisrfp.github.io/laporan-jaringan-komputer/modul-2.pdf)
-- [__MODUL 3: Manajemen Bandwith__](https://dr5hn.github.io/coming-soon/)
+- [__MODUL 3: Manajemen Bandwith__](https://farisrfp.github.io/laporan-jaringan-komputer/modul-3.pdf)
 - [__MODUL 4: VPN__](https://dr5hn.github.io/coming-soon/)
 - [__MODUL 5: IPv6__](https://dr5hn.github.io/coming-soon/)
 

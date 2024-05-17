@@ -12,6 +12,49 @@ Dalam modul ini, sebelum melakukan konfigurasi routing statis dan dinamis, terle
 
 Setelah topologi selesai disiapkan, langkah selanjutnya adalah melakukan konfigurasi routing statis dan dinamis pada perangkat MikroTik. Berikut adalah tahapan percobaan yang harus dilakukan:
 
+\subsection*{Percobaan 1: Konfigurasi Static Routing}
+
+\begin{enumerate}
+    \item \textbf{Buka WinBox dan Sambungkan ke Router:}
+    \begin{enumerate}
+        \item Buka aplikasi WinBox di PC1.
+        \item Klik \texttt{Neighbors}, lalu klik \texttt{Refresh}.
+        \item Klik dua kali router yang terdeteksi, lalu klik \texttt{Connect}.
+    \end{enumerate}
+    
+    \item \textbf{Atur IP Address Router 1:}
+    \begin{enumerate}
+        \item Pada tab \texttt{IP > Addresses}, masukkan IP Address untuk interface \texttt{ether2} dan \texttt{ether4}.
+        \item Pastikan IP Address berbeda dari contoh di modul dan sesuai aturan.
+    \end{enumerate}
+    
+    \item \textbf{Konfigurasi Routing Statis Router 1:}
+    \begin{enumerate}
+        \item Buka tab \texttt{IP > Routes}.
+        \item Tambahkan jaringan dengan memasukkan alamat jaringan tujuan dan alamat Gateway \texttt{router2}.
+    \end{enumerate}
+    
+    \item \textbf{Atur IP Address Router 2:}
+    \begin{enumerate}
+        \item Buka WinBox dan sambungkan ke \texttt{Router2}.
+        \item Pada tab \texttt{IP > Addresses}, masukkan IP Address untuk interface \texttt{ether2} dan \texttt{ether4}.
+        \item Pastikan IP Address berbeda dari contoh di modul dan sesuai aturan.
+    \end{enumerate}
+    
+    \item \textbf{Konfigurasi Routing Statis Router 2:}
+    \begin{enumerate}
+        \item Buka tab \texttt{IP > Routes}.
+        \item Tambahkan jaringan dengan memasukkan alamat jaringan tujuan dan alamat Gateway \texttt{router1}.
+    \end{enumerate}
+    
+    \item \textbf{Uji Koneksi:}
+    \begin{enumerate}
+        \item Lakukan tes ping dari \texttt{PC1} ke \texttt{router2}.
+        \item Lakukan tes ping dari \texttt{PC2} ke \texttt{router1}.
+        \item Jika status menunjukkan \texttt{terhubung}, maka percobaan berhasil.
+    \end{enumerate}
+\end{enumerate}
+
 \subsection*{Percobaan 2: Konfigurasi Dynamic Routing}
 
 \subsubsection*{Konfigurasi Router 1}
