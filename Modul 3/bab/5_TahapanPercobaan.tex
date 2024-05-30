@@ -1,3 +1,60 @@
 % Bagian Tahapan Percobaan
 \section*{Tahapan Percobaan} % Jika ada tahapan percobaan
 
+\subsection*{Tahap 1: Konfigurasi Awal}
+
+\begin{enumerate}
+    \item \textbf{Buka WinBox:} Jalankan aplikasi WinBox pada PC Anda.
+    \item \textbf{Sambungkan ke Router:}
+    \begin{itemize}
+        \item Isi bagian Login dengan "admin".
+        \item Klik "Neighbors", lalu "Refresh".
+        \item Pilih router target dan klik "Connect".
+    \end{itemize}
+    \item \textbf{Set DHCP Client:}
+    \begin{itemize}
+        \item Pada bagian interface, pilih "ether2" dan klik "Apply", lalu "OK".
+        \item Pada window DHCP Client, tambahkan IP Address router (antara PC dan Router) dengan mengisi address dan memilih interface yang terhubung ke "ether2". Klik "Apply" dan "OK".
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Tahap 2: Konfigurasi DHCP Server}
+
+\begin{enumerate}
+    \item \textbf{Set DHCP Server:} Pilih interface yang akan menjadi server pada DHCP Setup.
+    \item \textbf{DHCP Address Space:} Isi alamat network yang diinginkan dengan akhiran "0" pada IP Address.
+    \item \textbf{Gateway for DHCP Network:} Isi port router yang akan menghubungkan router dengan network address tujuan.
+    \item \textbf{Address to Give Out:} Isi range IP Address yang akan didaftarkan pada perangkat ja-ringan (xxx.xxx.xx.[3-255]). Klik "Next" pada bagian DNS Server.
+    \item \textbf{Cek IP Setting:} Pastikan IP setting untuk koneksi ethernet dalam mode Automatic (DHCP).
+\end{enumerate}
+
+\subsection*{Tahap 3: Konfigurasi Firewall dan NAT}
+
+\begin{enumerate}
+    \item \textbf{Buka Firewall:} Buka tab Firewall.
+    \item \textbf{Buat NAT Baru:}
+    \begin{itemize}
+        \item Tambahkan pada opsi chain dan pilih "srcnat".
+        \item Pilih "ether6" pada Out Interface. Klik "Apply".
+        \item Tambahkan action dengan set menjadi "masquerade". Klik "Apply" dan "OK".
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Tahap 4: Pengujian Koneksi}
+
+\begin{enumerate}
+    \item \textbf{Tes PING:} Lakukan tes PING ke 8.8.8.8 untuk memeriksa koneksi ke jaringan publik.
+    \item \textbf{Speed Test:} Jika PING berhasil, lakukan speed test pada browser.
+\end{enumerate}
+
+\subsection*{Tahap 5: Pengujian Pembatasan Bandwidth}
+
+\begin{enumerate}
+    \item \textbf{Buka Queue:} Buka tab queue.
+    \item \textbf{Batasi Bandwidth:}
+    \begin{itemize}
+        \item Pilih IP Address perangkat yang ingin dibatasi.
+        \item Batasi target upload. Klik "Apply" dan "OK".
+    \end{itemize}
+    \item \textbf{Ulangi Speed Test:} Lakukan speed test lagi untuk melihat efek pembatasan bandwidth.
+\end{enumerate}
