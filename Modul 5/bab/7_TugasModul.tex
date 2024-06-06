@@ -1,5 +1,28 @@
 \section*{Tugas Modul} % Jika ada Tugas Modul
-% \begin{enumerate}
- 
+\begin{enumerate}
+
+    \item Apa solusi lain ketika IPv4 habis, selain menggunakan IPv6?
+        \begin{itemize}
+            \item Perutean Antar-Domain Tanpa Kelas (CIDR)
+            Satuan Tugas Rekayasa Internet (IETF) menerapkan metode CIDR pada tahun 1993 . CIDR adalah singkatan dari Classless Inter-Domain Routing. Ini dirancang sebagai standar jaringan baru untuk mengalokasikan alamat IP dan perutean IP. Ini memperkenalkan notasi CIDR, metode baru dan ringkas untuk merepresentasikan alamat IP. Dalam notasi CIDR , alamat ditulis dengan sufiks, diawali dengan garis miring (/), yang menunjukkan jumlah bit awalan. 
+            \item Terjemahan Alamat Jaringan (NAT)
+            Penyamaran NAT atau IP memungkinkan ISP dan perusahaan menggunakan alamat IP pribadi khusus untuk menghubungkan jaringan komputer ke Internet menggunakan satu alamat IP publik. Dengan cara ini, mereka dapat menggunakan IPv4 untuk seluruh jaringan pribadi, bukan alamat IP per perangkat jaringan. NAT atau CGNAT Tingkat OperatorCGNAT adalah jenis NAT yang digunakan oleh ISP untuk menyediakan akses Internet kepada pelanggan. 
+            \item Pasar transfer IPv4
+            Transfer dapat dilakukan secara intra-RIR , dalam satu wilayah yang sama, atau antar-RIR , antar wilayah yang berbeda. RIR berdiri di tengah-tengah transfer karena mereka bertanggung jawab mengelola catatan registrasi.
+            \item Protokol Internet Versi 6 (IPv6)
+            Seperti yang kami jelaskan di artikel kami tentang IPv6 dan penerapannya, transisi ke IPv6 diperlukan untuk kemajuan teknologi. Serta satu-satunya solusi jangka panjang terhadap masalah yang berasal dari penipisan IPv4.
+        \end{itemize}
+
+    \item Sebutkan tiga keunggulan IPv6 dibandingkan IPv4!
+        \begin{itemize}
+            \item Cepat, karena IPv6 tak lagi bergantung kepada Network Address Translation (NAT) sehingga mempercepat proses pengiriman data. Terlebih lagi jika pada perangkat mobile akan dapat lebih cepat karena koneksinya tidak harus melewati NAT.
+            \item Efektif, karena ukuran routing table lebih kecil dibanding IPv4, maka proses routing dapat lebih sistematis dan tentunya efektif.
+            \item Aman, IPv6 sudah dapat menghindari serangan ke ARP (address resolution protocol) yang dapat mengalihkan lalu lintas jaringan kemudian mengalihkannya.
+            \item Hemat Bandwidth, penggunaan bandwidth dapat lebih hemat karena sudah mendukung multicast.
+            \item Konfigurasi yang Mudah, IPv6 sudah mendukung konfigurasi secara otomatis, sehingga dapat lebih memudahkan dan menghemat waktu.
+        \end{itemize}
+    
+    \item Mengapa panjang awal alamat IPv6 biasanya adalah 128 bit?
+    IPv6 meningkatkan ukuran alamat IP dari 32 bit yang menyusun alamat IPv4 menjadi 128 bit . Setiap bit tambahan yang diberikan ke suatu alamat menggandakan ukuran ruang alamat. Dengan menggunakan alamat IP yang lebih panjang, IPv6 dapat mendukung jumlah alamat yang sangat besar, yang diperlukan mengingat pertumbuhan pesat perangkat yang terhubung ke internet.
         
-% \end{enumerate}
+\end{enumerate}
