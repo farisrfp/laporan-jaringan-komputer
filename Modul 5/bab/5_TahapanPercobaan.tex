@@ -1,3 +1,26 @@
 % Bagian Tahapan Percobaan
-\section*{Tahapan Percobaan} % Jika ada tahapan percobaan
+\section*{Tahapan Percobaan} 
 
+\subsection*{Konfigurasi PC 1}
+
+\begin{enumerate}
+    \item Menghubungkan Winbox pada PC1 ke Router, dengan login menggunakan \texttt{admin}, serta memilih Router yang ingin disambungkan melalui fitur \textbf{Neighbors}.
+    \item Mengaktifkan layanan IPv6 pada Router1 melalui menu \textbf{System} dan \textbf{Packages}, serta melakukan reboot pada Router1.
+    \item Menambahkan alamat IPv6 pada Router1 untuk menghubungkan ke PC1 melalui interface yang sesuai, misalnya \textbf{ether4}.
+    \item Mengubah pengaturan IPv6 pada PC1 dari otomatis ke manual, memastikan IPv6 PC1 berada dalam jaringan yang sama dengan Router1, serta mengisi Gateway dengan alamat IPv6 dari Router1.
+    \item Melakukan uji konektivitas dengan melakukan ping antara Router1 dan PC1 untuk memastikan kedua perangkat sudah saling terhubung.
+    \item Mengonfigurasikan IPv6 pada Router1 untuk menghubungkan Router1 dengan Router2, menambahkan alamat IPv6 pada interface yang sesuai, misalnya \textbf{ether2}.
+    \item Menghubungkan kedua jaringan menggunakan routing statis melalui menu \textbf{IPv6 > Routes}, dan menambahkan route baru dengan alamat jaringan tujuan melalui Gateway pada Router2.
+\end{enumerate}
+
+\subsection*{Konfigurasi PC 2}
+
+\begin{enumerate}
+    \item Menghubungkan Winbox pada PC2 ke Router, dengan login menggunakan \texttt{admin}, serta memilih Router yang ingin disambungkan melalui fitur \textbf{Neighbors}.
+    \item Mengaktifkan layanan IPv6 pada Router2 melalui menu \textbf{System} dan \textbf{Packages}, serta melakukan reboot pada Router2.
+    \item Menambahkan alamat IPv6 pada Router2 untuk menghubungkan ke PC2 melalui interface yang sesuai, misalnya \textbf{ether4}.
+    \item Mengubah pengaturan IPv6 pada PC2 dari otomatis ke manual, memastikan IPv6 PC2 berada dalam jaringan yang sama dengan Router2, serta mengisi Gateway dengan alamat IPv6 dari Router2.
+    \item Melakukan uji konektivitas dengan melakukan ping antara Router2 dan PC2 untuk memastikan kedua perangkat sudah saling terhubung.
+    \item Mengonfigurasikan IPv6 pada Router2 untuk menghubungkan Router2 dengan Router1, menambahkan alamat IPv6 pada interface yang sesuai, misalnya \textbf{ether2}.
+    \item Menghubungkan kedua jaringan menggunakan routing statis melalui menu \textbf{IPv6 > Routes}, dan menambahkan route baru dengan alamat jaringan tujuan melalui Gateway pada Router1.
+\end{enumerate}
