@@ -1,3 +1,32 @@
 % Bagian Tahapan Percobaan
 \section*{Tahapan Percobaan} % Jika ada tahapan percobaan
 
+    \subsection*{Konfigurasi PC 1}
+
+    \begin{enumerate}
+        \item Menghubungkan PC ke Router ke Winbox dengan login sebagai "admin".
+        \item Mengkonfigurasi Router sebagai DHCP Client dengan memilih interface yang terhubung ke Internet dan melakukan tes ping ke IP 8.8.8.8.
+        \item Menambahkan IP Address pada Router 1 dengan memilih interface yang terhubung ke PC (ether4).
+        \item Mengatur IP pada PC 1 dengan mengubah pengaturan ethernet menjadi manual dan memastikan IP PC 1 berada pada satu jaringan dengan IP lokal yang diinginkan.
+        \item Melakukan Tes Ping antara Router dan PC1 untuk memastikan keduanya terkoneksi.
+        \item Membuat PPTP Server pada Router menggunakan Default Profile “default-encryption”.
+        \item Mengkonfigurasi PPTP Client pada Router dengan menambahkan Secret dan mengisi Nama, Password, Service, Profile, Local Address, dan Remote Address.
+        \item Menambahkan Routing Statis untuk menghubungkan PC1 dengan Internet melalui alamat Gateway pada router 1.
+        \item Mengaktifkan Layanan NAT untuk menghubungkan jaringan lokal ke jaringan publik dengan memilih Out Interface (ether6) dan mengatur Action ke “masquerade”.
+        \item Melakukan Tes Ping untuk menguji koneksi antar Router dan PC, memastikan kedua Router dan PC sudah terhubung.
+    \end{enumerate}
+
+    \subsection*{Konfigurasi PC 2}
+
+    \begin{enumerate}
+        \item Menghubungkan PC2 ke Internet menggunakan wifi ITS.
+        \item Memeriksa IP yang diterima PC2 dari ITS melalui pengaturan jaringan.
+        \item Masuk ke Pengaturan VPN di PC2 dan membuat koneksi VPN baru antara PC2 dengan Host Server menggunakan VPN type PPTP.
+        \item Menghubungkan ke VPN dengan klik tombol Connect.
+    \end{enumerate}
+
+    \subsection*{Pengujian Konfigurasi}
+
+    \begin{enumerate}
+        \item Melakukan Tes Ping untuk Memastikan Koneksi VPN PPTP dengan ping ke alamat PC1.
+    \end{enumerate}
