@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LAPORAN JARKOM</title>
+    <style>
+      /* Styling dasar yang meniru GitHub */
+      body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        background-color: #ffffff;
+        color: #0d1117;
+        transition: background-color 0.3s, color 0.3s;
+      
+        img {
+          max-width: 95% !important; /* Added !important here */
+        }
+      }
+
+     /* Media Query for Mobile Devices */
+      @media (max-width: 768px) { /* Adjust breakpoint as needed */
+          body {
+              max-width: 95%; /* Use percentage for mobile */
+          }
+      }
+
+      /* Styling untuk dark mode */
+      body.dark-mode {
+        background-color: #0d1117;;
+        color: #ffffff;
+      }
+
+      /* Tombol toggle untuk dark mode */
+      .dark-mode-button {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Konten dari README.md akan ditempatkan di sini oleh pandoc -->
+    $body$
+
+    <!-- Tombol toggle untuk dark mode -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()">
+      Toggle Dark Mode
+    </button>
+
+    <script>
+      function toggleDarkMode() {
+        var body = document.body;
+        if (body.classList.contains("dark-mode")) {
+          body.classList.remove("dark-mode");
+        } else {
+          body.classList.add("dark-mode");
+        }
+      }
+    </script>
+  </body>
+</html>
