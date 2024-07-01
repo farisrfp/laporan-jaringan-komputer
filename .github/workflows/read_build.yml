@@ -17,8 +17,8 @@ jobs:
       - name: Create dist directory
         run: mkdir dist
 
-      - name: Copy root assets to dist
-        run: cp -r ./doc ./dist
+      # - name: Copy root assets to dist
+        # run: cp -r ./doc ./dist
 
       - name: Convert README.md to index.html
         run: pandoc README.md --template=.github/pages/templates.html -o dist/index.html
