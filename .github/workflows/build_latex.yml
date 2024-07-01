@@ -6,9 +6,6 @@ on:
   push:
     branches: [main]
 jobs:
-  readme:
-    uses: ./.github/workflows/read_build.yml
-
   compile:
     name: Compile
     runs-on: ubuntu-latest
@@ -16,8 +13,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
-      # - name: Create dist directory
-      #   run: mkdir dist
+      - name: Create dist directory
+        run: mkdir dist
+
+      - name: Install pandoc
+        run: sudo apt-get install -y pandoc
+
+      - name: Convert README.md to index.html
+        run: pandoc README.md --template=.github/pages/templates.html -o dist/index.html
 
       - name: Compile modul 1
         uses: xu-cheng/latex-action@v3
